@@ -8,6 +8,7 @@ import javax.sql.DataSource;
 @RestController
 public class HelloController {
 
+    // http://localhost:8080/hello
     @GetMapping("hello")
     public String hello(){
         return "Hello, Spring Boot!";
