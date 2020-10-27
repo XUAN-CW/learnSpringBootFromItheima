@@ -16,6 +16,13 @@ public class HelloController {
     @Autowired
     private JdbcProperties prop;
 
+    // http://localhost:8080/helloYml
+    @GetMapping("helloYml")
+    public String helloYml() {
+        System.out.println("dataSource = " + prop);
+        return "Hello, Spring Boot!";
+    }
+
     // http://localhost:8080/helloProp
     @GetMapping("helloProp")
     public String helloProp() {
