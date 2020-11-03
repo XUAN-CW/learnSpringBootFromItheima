@@ -23,6 +23,8 @@ public class HelloController {
     @Value("${itheima.url}")
     private String itheimaUrl;
 
+    // http://localhost:8080/hello.html
+
     // http://localhost:8080/helloMultiYml
     @GetMapping("helloMultiYml")
     public String helloMultiYml() {
